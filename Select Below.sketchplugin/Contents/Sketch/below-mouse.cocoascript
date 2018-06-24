@@ -14,7 +14,7 @@ var onRun = function(context) {
   var point = handler.currentMousePointInCanvasCoordinates();
 
   // for some reason, we need to add container y position to the calculation
-  var bottom = point.y - container.frame().y();
+  var bottom = point.y + container.frame().y();
 
   // set up the predicate and receive an array of matched layers
   // because Sketch gets confused when layers and their parent group are selected,
